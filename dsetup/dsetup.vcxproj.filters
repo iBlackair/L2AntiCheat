@@ -84,6 +84,12 @@
     <ClCompile Include="ProcessTelemetry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NexoraDatCrypt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NexoraDatHook.cpp">
+      <Filter>Source Files\Hook</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="dsetup.def">
@@ -159,6 +165,12 @@
     </ClInclude>
     <ClInclude Include="ProcessTelemetry.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NexoraDatCrypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NexoraDatHook.h">
+      <Filter>Header Files\Hook</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

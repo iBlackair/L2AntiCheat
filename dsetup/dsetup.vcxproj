@@ -64,6 +64,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>dsetup.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -87,6 +88,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <ModuleDefinitionFile>dsetup.def</ModuleDefinitionFile>
       <Version>1.1</Version>
+      <AdditionalDependencies>Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <ShowProgress>
@@ -102,6 +104,8 @@
     <ClCompile Include="FileProtection.cpp" />
     <ClCompile Include="Hook.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NexoraDatCrypt.cpp" />
+    <ClCompile Include="NexoraDatHook.cpp" />
     <ClCompile Include="NotificationIcon.cpp" />
     <ClCompile Include="ProcessTelemetry.cpp" />
     <ClCompile Include="ProtectionState.cpp" />
@@ -129,6 +133,8 @@
     <ClInclude Include="ClientInstanceManager.h" />
     <ClInclude Include="FileProtection.h" />
     <ClInclude Include="Hook.h" />
+    <ClInclude Include="NexoraDatCrypt.h" />
+    <ClInclude Include="NexoraDatHook.h" />
     <ClInclude Include="NotificationIcon.h" />
     <ClInclude Include="ProcessTelemetry.h" />
     <ClInclude Include="ProtectionState.h" />

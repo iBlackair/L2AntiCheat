@@ -32,6 +32,7 @@
 #include "VoiceLog.h"
 #include "VoiceOverlay.h"
 #include "ProcessTelemetry.h"
+#include "NexoraDatHook.h"
 
 
 #pragma comment(lib, "ws2_32.lib")
@@ -1222,6 +1223,7 @@ DWORD WINAPI BootstrapThread(LPVOID)
     Sleep(500);
 
     InstallHooks();
+    InitializeNexoraDatHook();
     AccountVault_Initialize();
     AccountLogin_Initialize();
 
